@@ -31,7 +31,6 @@ body > div {
     align-content: center;
     justify-content: space-between;
     padding-bottom: 4rem;
-    /* deb */
     background-color:var(--black);
 
 }
@@ -113,8 +112,6 @@ h3.grey {
 /* Header */
 
 header > div {
-    text-align: center;
-    vertical-align: middle;
     padding-top: .5rem;
     display: flex;
     flex-direction: column;
@@ -146,17 +143,11 @@ header > div > img:nth-child(2) {
 .user {
     width: 25px;
     height: 25px;
-    background-color: grey;
-    border: solid grey;
+    background-color: var(--greylight);
     border-radius: 50%;
+    opacity: 1;
 }
 
-.user > img {
-    width: auto;
-    object-fit: contain;
-    object-position: center;
-    padding: 0;
-}
 /* Upgrade */
 
 .cont-upgrade {
@@ -189,10 +180,6 @@ header > div > img:nth-child(2) {
 /* Nav-Bar */
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
     padding-top: 8rem;
     width: 100%;
 }
@@ -231,9 +218,7 @@ section > h1 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: flex-start;
     align-items: flex-start;
-    align-content: space-between;
     padding-right: 1rem;
 }
 
@@ -242,7 +227,6 @@ section > h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
     flex-basis: 50%;
     padding-right: 1rem;
     padding-bottom: .5rem;
