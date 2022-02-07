@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/e09c276040.js" crossorigin="anonymous"></script>
     <title>Spotify Web</title>
 </head>
@@ -18,7 +20,7 @@
         <!-- User Nav-Bar and Library -->
         <header class="col-header">
             <div>
-                <div>
+                <div class="logo">
                     <img src="img/logo-small.svg" alt="">
                 </div>
                 <img src="img/home.svg" alt="home">
@@ -110,19 +112,57 @@
     <footer class="col-footer">
 
         <!-- Current-Song -->
-        <div>
+        <div class="cont-current-song">
+            <div>
+                <img src="img/sinister.jpeg" alt="">
+            </div>
+
+            <div class="cont-brano-nome">
+                <h2>Sinster</h2>
+                <h3 class="grey">Brano Nome</h3>
+            </div>
+
+            <div class="container-heart-folder">
+                <i class="far fa-heart "></i>
+                <i class="far fa-folder "></i>
+            </div>
+
 
         </div>
 
         <!-- Main Functions -->
-        <div>
+        <div class="player">
+            <div class="player-icons">
+                <i class="fas fa-random white"></i>
+                <i class="fas fa-step-backward white"></i>
+                <i class="far fa-play-circle white"></i>
+                <i class="fas fa-step-forward white"></i>
+                <i class="fas fa-redo-alt white"></i>
+            </div>
 
+            <div class="time-current-song">
+                <span>0:25</span>
+                <div class="barra">
+                    <div class="barra-completition">
+                        <div class="button-current-song"></div>
+                    </div>
+
+                </div>
+                <span>4:35</span>
+            </div>
         </div>
 
 
         <!-- Other Functions -->
-        <div>
-
+        <div class="other-functions">
+            <i class="fas fa-list white"></i>
+            <i class="fas fa-desktop white"></i>
+            <i class="fas fa-volume-up white"></i>
+            <div class="barra">
+                <div class="barra-completition">
+                    <div class="button-current-song"></div>
+                </div>
+            </div>
         </div>
 
     </footer>
