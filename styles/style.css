@@ -5,9 +5,8 @@
 }
 
 :root {
-    --greylight: rgb(192, 192, 192);
+    --greylight: rgb(177, 177, 177);
     --black: rgb(0, 0, 0);
-    --greydark: rgb(40, 40, 40);
 }
 
 html {
@@ -24,7 +23,7 @@ body > div {
 }
 
 .col-header {
-    flex-basis: 43px;
+    flex-basis: 45px;
     height: 100vh;
     flex-grow: 0;   
     display: flex;
@@ -86,6 +85,30 @@ a {
     font-weight: bold;
 }
 
+h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+h2 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+
+}
+
+h3 {
+    color: white;
+    font-size: .7rem;
+    font-weight: bolder;
+}
+
+
+h3.grey {
+    color: var(--greylight);
+}
+
 
 /* Header */
 
@@ -116,15 +139,32 @@ header > div > img:nth-child(2) {
     opacity: .8;
 }
 
+.download {
+    width: 20px;
+}
+
+.user {
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border: solid grey;
+    border-radius: 50%;
+}
+
+.user > img {
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+    padding: 0;
+}
 /* Upgrade */
 
 .cont-upgrade {
     position: fixed;
-    height: 4.5rem;
-    background-color: var(--black);
-    opacity: .9;
+    height: 7rem;
+    background-color: rgb(0, 0, 0, .8);
     z-index: 98;
-
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -134,9 +174,9 @@ header > div > img:nth-child(2) {
 }
 
 .upgrade {
-    border: solid rgba(255, 255, 255, .8) 1px;
-    border-radius: 1.2rem;
-    padding: .7rem 2.1rem;
+    border: solid 1px;
+    border-radius: 1.4rem;
+    padding: .9rem 3rem;
     
     
     vertical-align: middle;
@@ -144,7 +184,6 @@ header > div > img:nth-child(2) {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-    
 }
 
 /* Nav-Bar */
@@ -154,7 +193,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 5.5rem;
+    padding-top: 8rem;
     width: 100%;
 }
 
@@ -166,15 +205,60 @@ ul {
 }
 
 ul > li {
-    padding: .6rem;
+    padding: .8rem;
 }
 
 ul > li > a {
+    font-weight: 900;
     font-size: .8rem;
     text-transform: uppercase;
     vertical-align: middle;
 
+}
 
+/* SONGS PLAYED AND SUGGESTED */
+
+section {
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+section > h1 {
+    padding-bottom: 2rem;
+}
+
+.cont-songs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+    padding-right: 1rem;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 50%;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.song > img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.song > h2 {
+    padding-bottom: .5rem;
 }
 
 
