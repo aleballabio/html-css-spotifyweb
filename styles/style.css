@@ -5,13 +5,13 @@
 }
 
 :root {
-    --greylight: rgb(81, 81, 81);
+    --greylight: rgb(192, 192, 192);
     --black: rgb(0, 0, 0);
     --greydark: rgb(40, 40, 40);
 }
 
 html {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Utility Classes */
@@ -42,8 +42,9 @@ body > div {
     height: 100vh;
     flex-grow: 1;
     padding-bottom: 4rem;
-    /* deb */
-    background-color: blue;
+    background-color: rgb(20, 25, 34);
+    display: flex;
+    overflow-y: auto;
 }
 
 .col-footer {
@@ -59,8 +60,6 @@ body > div {
 
 /* Pre-format Tags */
 
-
-
 i {
     font-size: ;
 }
@@ -75,6 +74,14 @@ i.greylight {
 
 i.white {
     color: white;
+}
+
+a {
+    color: var(--greylight);
+    text-decoration: none;
+    font-size: .8rem;
+    display: inline-block;
+    font-weight: bold;
 }
 
 
@@ -106,6 +113,69 @@ header > div > img:first-child {
 header > div > img:nth-child(2) {
     opacity: .8;
 }
+
+/* Upgrade */
+
+.cont-upgrade {
+    position: fixed;
+    height: 4.5rem;
+    background-color: var(--black);
+    opacity: .9;
+    z-index: 98;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: calc(100% - 43px);
+    padding-right: .5rem;
+    padding-bottom: 1rem;
+}
+
+.upgrade {
+    color: white;
+    border: solid rgba(255, 255, 255, .8) 1px;
+    border-radius: 1.2rem;
+    padding: .7rem 2.1rem;
+
+    vertical-align: middle;
+    font-size: .7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+/* Nav-Bar */
+
+nav {
+    padding-top: 5.5rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul > li {
+    padding: .6rem;
+}
+
+ul > li > a {
+    font-size: .8rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+
+}
+
 
 @media screen and (max-width: 600px;) {
 }
