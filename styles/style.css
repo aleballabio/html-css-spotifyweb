@@ -194,6 +194,7 @@ header ul span {
 
 .download {
     width: 15px;
+    margin-bottom: .5rem;
 }
 .playlist {
     display: none;
@@ -234,6 +235,10 @@ header div h3 {
 
 .add-playlist:hover .fa-plus {
     color:white;
+}
+
+hr {
+    display: none;
 }
 
 
@@ -577,9 +582,11 @@ section {
 
     .download {
         padding: 0;
+        margin-bottom: 0;
     }
 
     hr {
+        display: block;
         width: 170px;
         border-color: var(--greydark);
         height: 1px;
