@@ -171,7 +171,7 @@ header ul span {
 .green-bar-left {
     border-left: solid 3.5px greenyellow;
     display: inline-block;
-    margin-left: -16px;
+    margin-left: -19px;
     padding-left: 0;
     margin-right: 10px;
     height: 25px;
@@ -321,7 +321,6 @@ nav ul > li > a {
     height: 1.5px;
     border-radius: 10px;
     background-color: greenyellow;
-    display: none;
 }
 
 /* SONGS PLAYED AND SUGGESTED */
@@ -646,9 +645,6 @@ section {
         height: 1px;
         margin-bottom: .5rem;
     }
-
-    .green-bar-bottom {
-        display: inline-block;
 }
 
 
