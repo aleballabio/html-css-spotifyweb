@@ -628,9 +628,9 @@ section {
     }
 
     .user-panel a span {
-    display: inline-block;
-    font-size: .7rem;
-    padding-left: .5rem;
+        display: inline-block;
+        font-size: .7rem;
+        padding-left: .5rem;
     }
 
     .download {
