@@ -411,7 +411,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 27%;
+    width: 25%;
     height: 4rem;
     padding-left: .5rem;
     padding-right: .5rem;
@@ -465,7 +465,7 @@ section {
 /* Player */
 
 .player {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,14 +483,14 @@ section {
 }
 .player-icons a {
     font-size: 15px;
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: .3rem;
+    padding-left: .3rem;
 }
 
 .player-icons .play i {
     font-size: 23px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
 }
 
 .play {
@@ -555,7 +555,7 @@ section {
 /* Other Functions */
 
 .other-functions {
-    width: 27%;
+    width: 25%;
     height: 4rem;
     display: flex;
     justify-content: flex-end;
