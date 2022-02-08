@@ -329,6 +329,7 @@ nav ul > li > a {
 section {
     padding-top: 2rem;
     padding-left: 1rem;
+    width: 100%;
 }
 
 .recently-played > h1 {
