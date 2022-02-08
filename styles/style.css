@@ -321,6 +321,7 @@ nav ul > li > a {
     height: 1.5px;
     border-radius: 10px;
     background-color: greenyellow;
+    display: none;
 }
 
 /* SONGS PLAYED AND SUGGESTED */
@@ -645,6 +646,9 @@ section {
         height: 1px;
         margin-bottom: .5rem;
     }
+
+    .green-bar-bottom {
+        display: inline-block;
 }
 
 
