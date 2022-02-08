@@ -363,19 +363,47 @@ section {
 
 }
 
-.song > img {
+.song img {
     width: 100%;
-    padding-bottom: 1rem;
 }
 
 .song > h2 {
+    padding-top: 1rem;
     padding-bottom: .5rem;
     font-size: .8rem;
 }
 
-.artists img {
+
+.relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.relative:hover .overlay {
+    display: inline-block;
+}
+
+.artists {
     border-radius: 50%;
 }
+
 
 /* Current Song */
 
