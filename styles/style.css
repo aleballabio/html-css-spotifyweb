@@ -622,7 +622,7 @@ section {
 
 @media screen and (min-width: 701px) {
     .song {
-        flex-basis: calc(100% / 4 - 1rem);
+        flex-basis: calc(100% / 4);
     }
 }
 
@@ -630,3 +630,4 @@ section {
     .song {
         flex-basis: calc(100% / 6);
     }
+}
