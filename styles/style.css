@@ -112,6 +112,10 @@ h3.grey {
     color: var(--greylight);
 }
 
+h3.greydark {
+    color: var(--greydark);
+}
+
 
 /* Header */
 
@@ -225,6 +229,8 @@ header div h3 {
 
 .cont-upgrade {
     width: calc(100% - 43px);
+    flex-grow: 0;
+    flex-shrink: 1;
     position: fixed;
     height: 5rem;
     background-color: rgb(0, 0, 0, .8);
@@ -283,7 +289,15 @@ section {
     padding-left: 1rem;
 }
 
-section > h1 {
+.recently-played > h1 {
+    padding-bottom: 1.5rem;
+}
+
+.subplaylist > h1 {
+    padding-bottom: 1rem;
+}
+
+.subplaylist > h3 {
     padding-bottom: 2rem;
 }
 
@@ -302,7 +316,7 @@ section > h1 {
     justify-content: center;
     flex-basis: 50%;
     padding-right: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: .7rem;
     text-align: center;
 
 }
@@ -316,6 +330,9 @@ section > h1 {
     padding-bottom: .5rem;
 }
 
+.artists img {
+    border-radius: 50%;
+}
 
 /* Current Song */
 
@@ -484,7 +501,7 @@ section > h1 {
     }
 
     .cont-upgrade {
-        width: calc(100% - 207px);
+        width: calc(100% - 245px);
     }
 
     header div {
