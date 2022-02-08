@@ -90,7 +90,7 @@ a:hover {
 
 h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bolder;
 }
 
@@ -184,7 +184,6 @@ header ul span {
     height: 25px;
     background-color: var(--greylight);
     border-radius: 50%;
-    opacity: 1;
     padding-bottom: 0;
 }
 
@@ -237,6 +236,10 @@ header div h3 {
     color:white;
 }
 
+header a:hover img {
+    filter: brightness(1);
+}
+
 hr {
     display: none;
 }
@@ -257,7 +260,7 @@ hr {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: .5rem;
+    padding-right: 1.5rem;
     padding-bottom: 1rem;
 }
 
@@ -272,7 +275,13 @@ hr {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
+    transition: transform .5s
 }
+
+.upgrade:hover {
+    transform: scale(1.2);
+}
+    
 
 /* Nav-Bar */
 
@@ -353,6 +362,7 @@ section {
 
 .song > h2 {
     padding-bottom: .5rem;
+    font-size: .8rem;
 }
 
 .artists img {
@@ -445,6 +455,13 @@ section {
     font-size: 23px;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.play {
+    transition: transform .2s;
+}
+.play:hover {
+    transform: scale(1.2);
 }
 
 .time-current-song {
@@ -603,5 +620,5 @@ section {
 
 @media screen and (min-width: 1101px) {
     .song {
-        flex-basis: calc(100% / 6 - 1rem);
+        flex-basis: calc(100% / 6);
     }
