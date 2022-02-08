@@ -29,9 +29,8 @@ body > div {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding-bottom: 4.5rem;
+    padding-bottom: 4rem;
     background-color:var(--black);
-    position: fixed;
 
 }
 
