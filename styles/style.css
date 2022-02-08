@@ -31,6 +31,7 @@ body > div {
     align-content: center;
     padding-bottom: 4rem;
     background-color:var(--black);
+    overflow-y: hidden;
 
 }
 
