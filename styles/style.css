@@ -7,7 +7,7 @@
 :root {
     --greylight: rgb(160, 160, 160);
     --black: rgb(0, 0, 0);
-    --greydark: rgb(94, 94, 94);
+    --greydark: rgb(109, 109, 109);
 }
 
 html {
@@ -19,8 +19,6 @@ html {
 
 body > div {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -31,7 +29,7 @@ body > div {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: space-between;
+
     padding-bottom: 4rem;
     background-color:var(--black);
 
@@ -74,12 +72,20 @@ i.white {
     color: white;
 }
 
+i:hover {
+    color: white;
+    cursor: pointer;
+}
+
 a {
-    color: var(--greylight);
+    color: var(--greydark);
     text-decoration: none;
-    font-size: .8rem;
     display: inline-block;
     font-weight: bold;
+}
+
+a:hover {
+    color: white;
 }
 
 h1 {
@@ -109,7 +115,7 @@ h3.grey {
 
 /* Header */
 
-header > div {
+header div {
     padding-top: .5rem;
     display: flex;
     flex-direction: column;
@@ -120,46 +126,113 @@ header div:last-child  {
     padding-bottom: .5rem;
 }
 
-header > div img {
+header div img {
     width: 20px;
-    padding-top: .2rem;
-    padding-bottom: .2rem;
+    vertical-align: middle;
     filter: brightness(.8);
+    padding-bottom: .5rem;
 }
 
-.logo > img:first-child {
+.logo > img {
     padding-bottom: .6rem;
     filter: brightness(1);
 }
 
-header > div > img:nth-child(2) {
+.logo-full {
+    display: none;
+}
+
+header ul {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+header ul span {
+    display: none;
+}
+
+.user-panel a span {
+    display: none;
+}
+
+.home {
     opacity: .9;
 }
 
-.download {
-    width: 20px;
+.user-panel {
+    margin-top: auto;
 }
-
 .user {
     width: 25px;
     height: 25px;
     background-color: var(--greylight);
     border-radius: 50%;
     opacity: 1;
+    padding-bottom: 0;
 }
+
+.user-name {
+    color: white;
+}
+
+.download {
+    width: 15px;
+}
+.playlist {
+    display: none;
+}
+
+header div h3 {
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+
+.playlist ul li {
+    font-size: .7rem;
+    line-height: 1.7rem;
+}
+
+
+.add-playlist > a {
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+
+
+.add-playlist span {
+    background-color: var(--greylight);
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: .5rem;
+}
+
+.add-playlist i {
+    padding-top: .5rem;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.add-playlist:hover i,span {
+    color:white;
+}
+
+
 
 /* Upgrade */
 
 .cont-upgrade {
+    width: calc(100% - 43px);
     position: fixed;
-    height: 7rem;
+    height: 5rem;
     background-color: rgb(0, 0, 0, .8);
     z-index: 98;
     
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: calc(100% - 43px);
     padding-right: .5rem;
     padding-bottom: 1rem;
 }
@@ -167,11 +240,11 @@ header > div > img:nth-child(2) {
 .upgrade {
     border: solid 1px;
     border-radius: 1.4rem;
-    padding: .9rem 3rem;
+    padding: .7rem 3rem;
     
     
     vertical-align: middle;
-    font-size: .7rem;
+    font-size: .6rem;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -180,23 +253,23 @@ header > div > img:nth-child(2) {
 /* Nav-Bar */
 
 nav {
-    padding-top: 8rem;
+    padding-top: 5rem;
     width: 100%;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-ul > li {
+nav ul li {
     padding: .7rem;
 }
 
-ul > li > a {
-    font-weight: 900;
+nav ul > li > a {
+    font-weight: 700;
     font-size: .75rem;
     text-transform: uppercase;
     vertical-align: middle;
@@ -377,8 +450,8 @@ section > h1 {
 }
 
 .barra:hover .button-current-song {
+    display: inline-block;
 }
-display: inline-block;
 
 .barra:hover .barra-completition {
     background-color: greenyellow;
@@ -404,11 +477,82 @@ display: inline-block;
     flex-grow: 0;
 }
 
-@media screen and (max-width: 600px;) {
+@media screen and (min-width: 601px) {
+
+    .col-header {
+        flex-basis: 245px;
+    }
+
+    .cont-upgrade {
+        width: calc(100% - 207px);
+    }
+
+    header div {
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-full {
+        display: inline-block;
+        width: 120px;
+        padding: 0;
+    }
+
+    header div img {
+        width: 25px;
+    }
+
+    .user-functions span {
+        display: inline-block;
+        font-size: .6rem;
+    }
+
+    .add-playlist {
+        display: inline-block;
+    }
+
+    header ul img {
+        padding-right: .2rem;
+    }
+
+    .playlist {
+        display: inline-block;
+    }
+
+    .user-panel a:first-child {
+        vertical-align: middle;
+        padding-bottom: .5rem;
+    }
+
+    .user-panel a span {
+    display: inline-block;
+    font-size: .7rem;
+    padding-left: .5rem;
+    }
+
+    .download {
+        padding: 0;
+    }
+
+    hr {
+        width: 170px;
+        border-color: var(--greydark);
+        height: 1px;
+        margin-bottom: .5rem;
+    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 700px;) {
-}
 
-@media screen and (min-width: 701px) and (max-width: 1100px;) {
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    .song {
+        flex-basis: calc(100% / 4 - 1rem);
+    }
 }

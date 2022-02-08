@@ -17,21 +17,45 @@
 
 <body>
     <div class="container-flex">
+
+
         <!-- User Nav-Bar and Library -->
         <header class="col-header">
             <div>
                 <div class="logo">
-                    <img src="img/logo-small.svg" alt="">
+                    <img class="logo-small" src="img/logo-small.svg" alt="Logo">
+                    <img class="logo-full" src="img/logo.svg" alt="Logo">
                 </div>
-                <img src="img/home.svg" alt="home">
-                <img src="img/search.svg" alt="search">
-                <img src="img/libreria.svg" alt="library">
+
+                <ul class="user-functions">
+                    <li><a href="#!"><img src="img/home.svg" alt="home"><span>Home</span></a></li>
+                    <li><a href="#!"><img class="home" src="img/search.svg" alt="search"><span>Cerca</span> </a></li>
+                    <li><a href="#!"><img src="img/libreria.svg" alt="library"><span>La tua libreria</span></a> </li>
+                </ul>
             </div>
 
-            <div>
-                <img class="download" src="img/download.svg" alt="download">
-                <img class="user" src="img/profile.svg" alt="user">
+            <div class="playlist">
+                <h3 class="white">Playlist</h3>
+                <ul>
+                    <li class="add-playlist"><a href="#!"><span><i class="fas fa-plus"></i></span>Crea
+                            Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                    <li><a href="#!">Nuova Playlist</a></li>
+                </ul>
+            </div>
 
+
+            <div class="user-panel">
+                <a href=""><img class="download" src="img/download.svg" alt="download"><span class="instal">Installa
+                        app</span></a>
+                <hr>
+                <a href=""><img class="user" src="img/profile.svg" alt="user"><span class="user-name">John
+                        Doe</span></a>
             </div>
 
         </header>
